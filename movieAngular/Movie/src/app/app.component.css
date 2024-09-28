@@ -1,0 +1,26 @@
+/* Ensure the body takes up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Wrapper to contain the header, content, and footer */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+  }
+  
+  /* Main content area */
+  main {
+    flex: 1; /* Takes up remaining space between header and footer */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #343a40; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    padding: 1rem; /* Padding for spacing */
+  }
+  
