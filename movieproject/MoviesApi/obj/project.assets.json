@@ -2288,11 +2288,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\movieproject\\MoviesApi\\MoviesApi.csproj",
+      "projectUniqueName": "D:\\anglerandapiProject\\movieproject\\MoviesApi\\MoviesApi.csproj",
       "projectName": "MoviesApi",
-      "projectPath": "D:\\movieproject\\MoviesApi\\MoviesApi.csproj",
+      "projectPath": "D:\\anglerandapiProject\\movieproject\\MoviesApi\\MoviesApi.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "D:\\movieproject\\MoviesApi\\obj\\",
+      "outputPath": "D:\\anglerandapiProject\\movieproject\\MoviesApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

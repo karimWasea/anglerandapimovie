@@ -12,7 +12,7 @@
 
         public string Storeline { get; set; }
 
-        public byte[] Poster { get; set; }
+        public byte?[] Poster { get; set; }
 
         public byte GenreId { get; set; }
 

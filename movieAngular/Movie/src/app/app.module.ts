@@ -7,8 +7,9 @@ import { HeaderComponent } from './Component/header/header.component';
 import { FooterComponent } from './Component/footer/footer.component';
 import {  GenreComponent } from './Component/genra/genra.component';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MoviesComponent } from './Component/movies/movies.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,17 @@ import { HttpClientModule } from '@angular/common/http';
      
     HeaderComponent,
     FooterComponent,
-    GenreComponent
+    GenreComponent,
+    MoviesComponent
   ],
   imports: [   
       FormsModule ,// Add this line
       HttpClientModule,
     BrowserModule,
     AppRoutingModule
+    ,   
+     ReactiveFormsModule // Add ReactiveFormsModule here
+
     ,
      RouterModule // Add RouterModule here if not using a separate routing module
   ],

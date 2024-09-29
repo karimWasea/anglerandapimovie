@@ -22,16 +22,7 @@ export class GenresService {
 
     return this.http.get<Genra[]>(this.apiUrl, { params });
   }
-  // getAll(filterBy?: string): Observable<Genra[]> {
-  //   // Construct HttpParams object
-  //   let params = new HttpParams();
-  //   if (filterBy) {
-  //     params = params.set('filterBy', filterBy);
-  //   }
-
-    // Pass HttpParams to the request
-  //   return this.http.get<Genra[]>(this.apiUrl, { params });
-  // }
+ 
   create(genre: Genra): Observable<Genra> {
     return this.http.post<Genra>(this.apiUrl, genre);
   }

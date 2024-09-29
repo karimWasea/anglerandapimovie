@@ -6,9 +6,13 @@ namespace MoviesApi.Helpers
     {
         public MappingProfile()
         {
-            CreateMap<Movie, MovieDetailsDto>();
+            // Map Movie to MovieDetailsDto and enable reverse mapping
+            CreateMap<Movie, MovieDetailsDto>().ReverseMap();
+
+            // Map MovieDto to Movie, ignoring the Poster property, and enable reverse mapping
             CreateMap<MovieDto, Movie>()
-                .ForMember(src => src.Poster, opt => opt.Ignore());
+                .ForMember(dest => dest.Poster, opt => opt.Ignore())
+                .ReverseMap();
         }
     }
 }

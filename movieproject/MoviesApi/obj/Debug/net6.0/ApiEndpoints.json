@@ -118,7 +118,7 @@
       },
       {
         "Name": "Poster",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
@@ -180,7 +180,7 @@
       },
       {
         "Name": "Poster",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
@@ -203,22 +203,6 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MoviesApi.Controllers.MoviesController",
-    "Method": "GetByGenreIdAsync",
-    "RelativePath": "api/Movies/GetByGenreId",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "genreId",
-        "Type": "System.Byte",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []

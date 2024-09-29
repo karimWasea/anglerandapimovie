@@ -17,7 +17,7 @@ namespace MoviesApi.Models
         [MaxLength(2500)]
         public string Storeline { get; set; }
 
-        public byte[]? Poster { get; set; }
+        public string? Poster { get; set; }
 
         public byte GenreId { get; set; }
 

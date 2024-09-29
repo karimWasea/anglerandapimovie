@@ -25,7 +25,7 @@ namespace MoviesApi.Models  // Change to the correct namespace
                     Rate = 8.8,
                     Storeline = "A thief with the ability to enter people's dreams takes on the ultimate heist.",
                     Poster = null, // Assuming null for seed data
-                    GenreId = 1
+                    GenreId = 2
                 },
                 new Movie
                 {
@@ -35,7 +35,7 @@ namespace MoviesApi.Models  // Change to the correct namespace
                     Rate = 9.0,
                     Storeline = "When the menace known as the Joker emerges, Batman must accept one of the greatest psychological tests of his ability to fight injustice.",
                     Poster = null,
-                    GenreId = 1
+                    GenreId = 2
                 },
                 new Movie
                 {

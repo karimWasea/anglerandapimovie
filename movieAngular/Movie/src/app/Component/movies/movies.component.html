@@ -1,0 +1,73 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Movie List</h2>
+    
+    <!-- Button to Open Modal -->
+    <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#movieModal">
+        Add Movie
+    </button>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Rating</th>
+                <th>Genre</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let movie of movies">
+                <td>{{ movie.title }}</td>
+                <td>{{ movie.year }}</td>
+                <td>{{ movie.rate }}</td>
+                <td>{{ movie.genreName }}</td>
+                <td>
+                    <button class="btn btn-primary" (click)="editMovie(movie.id)">Edit</button>
+                    <button class="btn btn-danger" (click)="deleteMovie(movie.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Modal for Add/Edit Movie -->
+    <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="movieModalLabel">{{ editingMovieId ? 'Edit Movie' : 'Add Movie' }}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form [formGroup]="movieForm" (ngSubmit)="editingMovieId ? updateMovie() : createMovie()">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input formControlName="title" id="title" class="form-control" placeholder="Title" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="year" class="form-label">Year</label>
+                            <input formControlName="year" id="year" type="number" class="form-control" placeholder="Year" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rate" class="form-label">Rating</label>
+                            <input formControlName="rate" id="rate" type="number" step="0.1" class="form-control" placeholder="Rating" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="genreId" class="form-label">Genre ID</label>
+                            <input formControlName="genreId" id="genreId" type="number" class="form-control" placeholder="Genre ID" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="storyline" class="form-label">Storyline</label>
+                            <textarea formControlName="storyline" id="storyline" class="form-control" placeholder="Storyline" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="poster" class="form-label">Poster</label>
+                            <input type="file" (change)="onFileChange($event)" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">{{ editingMovieId ? 'Update Movie' : 'Add Movie' }}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

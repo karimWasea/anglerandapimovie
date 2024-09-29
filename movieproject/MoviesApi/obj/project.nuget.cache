@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XJtJzgfQLK4=",
+  "dgSpecHash": "7TisZMBvarI=",
   "success": true,
-  "projectFilePath": "D:\\movieproject\\MoviesApi\\MoviesApi.csproj",
+  "projectFilePath": "D:\\anglerandapiProject\\movieproject\\MoviesApi\\MoviesApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
